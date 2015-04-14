@@ -16,6 +16,10 @@ describe('Thermostat', function() {
       expect(thermostat.powerSaver).toBe(true);
     });
 
+    it('with a yellow display', function() {
+      expect(thermostat.display).toBe('Yellow');
+    });
+
   });
 
   describe('Can', function() {
@@ -41,11 +45,18 @@ describe('Thermostat', function() {
       expect(thermostat.powerSaver).toBe(false);
     });
 
-    it('can be reset to 20 degrees by hitting reset', function() {
+    it('be reset to 20 degrees by hitting reset', function() {
       thermostat.increaseTemp();
       thermostat.resetTemp();
       expect(thermostat.temperature).toBe(20);
     });
+
+    // it('change display to red when temperature is greater than 24', function() {
+    //   for (i = 0; i < 5; i++) {
+    //     thermostat.increaseTemp();
+    //   };
+    //   expect(thermostat.display).toBe('Red');
+    // });
 
   });
 
@@ -54,14 +65,15 @@ describe('Thermostat', function() {
     it('drop below 10 degrees', function() {
       for (i = 0; i < 15; i++) {
         thermostat.decreaseTemp();
-      }
+      };
       expect(thermostat.temperature).toBe(10);
     });
 
     it('exceed 25 degrees whilst power saver mode is on', function() {
       for (var i = 0; i < 15; i++) {
         thermostat.increaseTemp();
-      }
+      };
+
       expect(thermostat.temperature).toBe(25);
     });
 
@@ -69,7 +81,7 @@ describe('Thermostat', function() {
       thermostat.powerSaver = false
       for (var i = 0; i < 15; i++) {
         thermostat.increaseTemp();
-      }
+      };
       expect(thermostat.temperature).toBe(32);
     });
 

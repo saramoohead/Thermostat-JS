@@ -1,6 +1,7 @@
 var Thermostat = function() {
   this.temperature = 20;
   this.powerSaver = true;
+  if (this.temperature < 25 && this.temperature > 18) {this.display = 'Yellow'};
 };
 
 Thermostat.prototype.increaseTemp = function() {
