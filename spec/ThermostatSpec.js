@@ -9,7 +9,7 @@ describe('Thermostat', function() {
   describe('Starts at', function() {
 
     it('20 degrees', function() {
-      expect(thermostat.defaultTemperature).toBe(20);
+      expect(thermostat.temperature).toBe(20);
     });
 
   });
@@ -18,7 +18,23 @@ describe('Thermostat', function() {
 
     it('increase temperature', function() {
       thermostat.increaseTemp();
-      expect(thermostat.temperature).toBe(1);
+      expect(thermostat.temperature).toBe(21);
+    });
+
+    it('decrease temperature', function() {
+      thermostat.decreaseTemp();
+      expect(thermostat.temperature).toBe(19);
+    });
+
+  });
+
+  describe('Cannot', function() {
+
+    it('cannot drop below 10 degrees', function() {
+      for (var i = 0; i < 15 ; i++) {
+        thermostat.decreaseTemp();
+      }
+      expect(thermostat.temperature).toBe(10);
     });
 
   });
