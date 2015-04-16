@@ -11,31 +11,81 @@
 
 .thermostat {
   width: 500px;
-  height: 170px;
+  height: 170px;*/
   border-radius: 25px;
   padding: 2rem;
   position: fixed;
-  top: 16%;
-  left: 33%
+  top: 80px;
+  left: 41%;
 }
 
 .thermostat__temperature-container {
   text-align: center;
+  display: inline-block;
+  font-size: 100px;
+  margin-top: 30px;
+}
+
+.thermostat__units {
+  vertical-align: top;
+  position: relative;
+  font-size: 30px;
+}
+
+.righthandside {
+  display: inline-block;
+  margin-left: 80px;
 }
 
 .thermostat__control {
   margin-top: 1rem;
   text-align: center;
-  position: fixed;
-  left: 1120px;
+/*  position: fixed;
+  left: 1120px;*/
 }
+
+.thermostat__control__up {
+  top: 114px;
+  position: fixed;
+  width: 60px;
+  height: 40px;
+  background: transparent;
+  border: none;
+}
+
+.thermostat__control__down {
+  top: 165px;
+  position: fixed;
+  width: 60px;
+  height: 40px;
+  background: transparent;
+  border: none;
+}
+
+.thermostat__control__down:focus {
+  outline: none;
+}
+
+.thermostat__control__up:focus {
+  outline: none;
+}
+
+.thermostat__powersave {
+  position: fixed;
+  top: 240px;
+}
+
+/*input.psmode {
+  width: 50px;
+  height: 50px;
+}*/
 
 .thermostat__powersave {
   margin-top: 1rem;
   text-align: center;
-  position: fixed;
-  left: 1010px;
-  top: 275px;
+/*  position: fixed;*/
+/*  left: 1010px;
+  top: 275px;*/
 }
 
 .thermostat_image {
