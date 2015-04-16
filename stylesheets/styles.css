@@ -1,5 +1,6 @@
 /* — Typography — */
 
+
 /* — Layout — */
 
 .container {
@@ -20,6 +21,7 @@
 }
 
 .thermostat__temperature-container {
+  font-family: futura, sans-serif;
   text-align: center;
   display: inline-block;
   font-size: 100px;
@@ -34,14 +36,12 @@
 
 .righthandside {
   display: inline-block;
-  margin-left: 80px;
+  margin-left: 45px;
 }
 
 .thermostat__control {
   margin-top: 1rem;
   text-align: center;
-/*  position: fixed;
-  left: 1120px;*/
 }
 
 .thermostat__control__up {
@@ -74,11 +74,6 @@
   position: fixed;
   top: 240px;
 }
-
-/*input.psmode {
-  width: 50px;
-  height: 50px;
-}*/
 
 .thermostat__powersave {
   margin-top: 1rem;
