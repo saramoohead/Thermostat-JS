@@ -1,15 +1,15 @@
 var thermostat = new Thermostat();
 
 $(document).ready(function () {
-  $('.temperature').text(thermostat.temperature);
-  $('input.up').click(function() {
+  $('#temperature').text(thermostat.temperature);
+  $('input.thermostat__control__up').click(function() {
     thermostat.increaseTemp();
-    $('.temperature').text(thermostat.temperature);
+    $('#temperature').text(thermostat.temperature);
   });
 
-  $('input.down').click(function() {
+  $('input.thermostat__control__down').click(function() {
     thermostat.decreaseTemp();
-    $('.temperature').text(thermostat.temperature);
+    $('#temperature').text(thermostat.temperature);
   });
 
   $('input.psmode').change(function () {
