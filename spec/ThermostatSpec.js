@@ -16,10 +16,6 @@ describe('Thermostat', function() {
       expect(thermostat.powerSaver).toBe(true);
     });
 
-    it('with a yellow display', function() {
-      expect(thermostat.display).toBe('Yellow');
-    });
-
   });
 
   describe('Can', function() {
@@ -50,13 +46,6 @@ describe('Thermostat', function() {
       thermostat.resetTemp();
       expect(thermostat.temperature).toBe(20);
     });
-
-    // it('change display to red when temperature is greater than 24', function() {
-    //   for (i = 0; i < 5; i++) {
-    //     thermostat.increaseTemp();
-    //   };
-    //   expect(thermostat.display).toBe('Red');
-    // });
 
   });
 
