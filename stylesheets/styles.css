@@ -1,0 +1,48 @@
+/* — Typography — */
+
+/* — Layout — */
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.thermostat {
+  width: 500px;
+  border: 2px solid #9f9f9f;
+  border-radius: 25px;
+  padding: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.thermostat__temperature-container {
+  text-align: center;
+}
+
+.thermostat__control {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.thermostat__powersave {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.thermostat_image {
+  content:url(/images/thermostat.jpg);
+  width: 500px;
+  z-index: -1;
+}
+
+.visuallyhidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -5,27 +5,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/src/Thermostat.js"></script>
     <script src="/src/Interface.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   </head>
 
   <body>
     <section class="container">
+        <div class="thermostat_image"></div>
 
-        <p id="thermostat" class="thermostat">
-          <span id="temperature" class="thermostat__temperature-container">Temperature</span>
-          <span class="thermostat__units"> &deg;C</span>
-        </p>
+        <div id="thermostat" class="thermostat">
 
-      <aside class="thermostat__control">
-        <label for="temperature_up" class="visuallyhidden">Temperature Up</label>
-        <input id="up" class="thermostat__control__up" type="button" value="&#8593" name="temperature_up">
-        <label for="temperature_down" class="visuallyhidden">Temperature Down</label>
-        <input id="down" class="thermostat__control__down" type="button" value="&#8595" name="temperature_down">
-      </aside>
+              <p class="thermostat__temperature-container">
+                <span id="temperature" class="thermostat__temperature">Temperature</span>
+                <span class="thermostat__units"> &deg;C</span>
+              </p>
+            
 
-      <aside class="thermostat__powersave">
-        <label>Power Saver Mode<input class="psmode" type="checkbox" checked="checked"></label>
-      </aside>
+              <aside class="thermostat__control">
+                <label for="temperature_up" class="visuallyhidden">Temperature Up</label>
+                <input id="up" class="thermostat__control__up" type="button" value="&#8593" name="temperature_up">
+                <label for="temperature_down" class="visuallyhidden">Temperature Down</label>
+                <input id="down" class="thermostat__control__down" type="button" value="&#8595" name="temperature_down">
+              </aside>
 
+              <aside class="thermostat__powersave">
+                <label>Power Saver Mode <input class="psmode" type="checkbox" checked="checked"></label>
+              </aside>
+
+        </div>
     </section>
   </body>
 
