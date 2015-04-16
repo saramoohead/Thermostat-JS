@@ -13,23 +13,25 @@
     <section class="container">
 
         <div id="thermostat" class="thermostat">
-          <p class="thermostat__temperature-container">
-            <span id="temperature" class="thermostat__temperature">Temperature</span>
-            <span class="thermostat__units"> &deg;C</span>
-          </p>
+        <div class="thermostat_image"></div>
+              <p class="thermostat__temperature-container">
+                <span id="temperature" class="thermostat__temperature">Temperature</span>
+                <span class="thermostat__units"> &deg;C</span>
+              </p>
+            
+
+              <aside class="thermostat__control">
+                <label for="temperature_up" class="visuallyhidden">Temperature Up</label>
+                <input id="up" class="thermostat__control__up" type="button" value="&#8593" name="temperature_up">
+                <label for="temperature_down" class="visuallyhidden">Temperature Down</label>
+                <input id="down" class="thermostat__control__down" type="button" value="&#8595" name="temperature_down">
+              </aside>
+
+              <aside class="thermostat__powersave">
+                <label>Power Saver Mode <input class="psmode" type="checkbox" checked="checked"></label>
+              </aside>
+
         </div>
-
-      <aside class="thermostat__control">
-        <label for="temperature_up" class="visuallyhidden">Temperature Up</label>
-        <input id="up" class="thermostat__control__up" type="button" value="&#8593" name="temperature_up">
-        <label for="temperature_down" class="visuallyhidden">Temperature Down</label>
-        <input id="down" class="thermostat__control__down" type="button" value="&#8595" name="temperature_down">
-      </aside>
-
-      <aside class="thermostat__powersave">
-        <label>Power Saver Mode <input class="psmode" type="checkbox" checked="checked"></label>
-      </aside>
-
     </section>
   </body>
 
