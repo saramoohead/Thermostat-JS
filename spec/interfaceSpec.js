@@ -16,6 +16,11 @@ describe('Interface', function() {
       expect($('.temperature')).toContainText('21');
     });
 
+    it('a decreased temperature when the up arrow is clicked', function () {
+      $('input.down').click();
+      expect($('.temperature')).toContainText('19');
+    });
+
   });
 
 });
