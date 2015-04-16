@@ -11,12 +11,12 @@
 
 .thermostat {
   width: 500px;
-  border: 2px solid #9f9f9f;
+  height: 170px;
   border-radius: 25px;
   padding: 2rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  position: fixed;
+  top: 16%;
+  left: 33%
 }
 
 .thermostat__temperature-container {
@@ -26,22 +26,28 @@
 .thermostat__control {
   margin-top: 1rem;
   text-align: center;
+  position: fixed;
+  left: 1120px;
 }
 
 .thermostat__powersave {
   margin-top: 1rem;
   text-align: center;
+  position: fixed;
+  left: 1010px;
+  top: 275px;
 }
 
 .thermostat_image {
   content:url(/images/thermostat.jpg);
-  width: 500px;
+  width: 750px;
   z-index: -1;
+  margin: auto;
 }
 
 .visuallyhidden {
   position: absolute !important;
-  height: 1px; width: 1px; 
+  height: 1px; width: 1px;
   overflow: hidden;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
