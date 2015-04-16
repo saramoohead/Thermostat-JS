@@ -10,11 +10,13 @@
 }
 
 .thermostat {
-  margin: 0 auto;
   width: 500px;
   border: 2px solid #9f9f9f;
   border-radius: 25px;
   padding: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .thermostat__temperature-container {
@@ -31,10 +33,10 @@
   text-align: center;
 }
 
-
 .thermostat_image {
   content:url(/images/thermostat.jpg);
   width: 500px;
+  z-index: -1;
 }
 
 .visuallyhidden {
