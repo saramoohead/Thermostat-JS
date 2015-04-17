@@ -25,13 +25,13 @@ describe('Interface', function () {
             expect($('#psstatus')).toContainText('On');
         });
 
-        xit('power save mode off text when off', function () {
+        it('power save mode off text when off', function () {
             $('input#psmode').click();
             expect($('#psstatus')).toContainText('Off');
         });
 
         it('has a maximum of 25 when power save mode is on', function () {
-            expect($('thermostat.powerSaver')).toBe(true);
+            expect($('#psstatus')).toContainText('On');
                 for (var i=0; i<7; i++) {
             $('input#up').click();
             }
@@ -40,7 +40,7 @@ describe('Interface', function () {
 
         it('has a maximum of 32 when power save mode is off', function() {
             $('input#psmode').click();
-            expect($('thermostat.powerSaver')).toBe(false);
+            expect($('#psstatus')).toContainText('Off');
                 for(var i=0; i<15; i++) {
             $('input#up').click();
             }
