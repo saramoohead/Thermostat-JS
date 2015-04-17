@@ -18,4 +18,6 @@ $(document).ready(function () {
     else
       thermostat.powerSaverOff();
   });
+  $('#psstatus').text(thermostat.psStatus);
+
 });

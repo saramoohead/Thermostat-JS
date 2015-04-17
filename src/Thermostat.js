@@ -19,6 +19,7 @@ Thermostat.prototype.decreaseTemp = function() {
 
 Thermostat.prototype.powerSaverOn = function() {
   this.powerSaver = true;
+  this.psStatus = "Power Save On";
 };
 
 Thermostat.prototype.powerSaverOff = function() {
@@ -29,11 +30,3 @@ Thermostat.prototype.powerSaverOff = function() {
 Thermostat.prototype.resetTemp = function() {
   this.temperature = 20;
 };
-
-// Thermostat.prototype.psStatusToggle = function() {
-//   if (this.powerSaver === true) {
-//     this.psStatus = "Power Save On";
-//   }
-//   else
-//     this.psStatus = "Power Save Off";
-// };

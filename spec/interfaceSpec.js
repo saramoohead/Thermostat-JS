@@ -20,8 +20,12 @@ describe('Interface', function () {
             $('input#down').click();
             expect($('#temperature')).toContainText('19');
         });
+        
+        it('power save mode on text when on', function () {
+            expect($('#psstatus')).toContainText('Power Save On');
+        });
 
-        xit('turn off power save mode display', function () {
+        xit('power save mode off text when off', function () {
             $('input#psmode').click();
             expect($('#psstatus')).toContainText('Power Save Off');
         });
