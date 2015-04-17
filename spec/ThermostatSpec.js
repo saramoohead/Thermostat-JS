@@ -42,12 +42,12 @@ describe('Thermostat', function() {
     });
 
     it('display power save on', function () {
-      expect(thermostat.psStatus).toEqual("Power Save On");
+      expect(thermostat.psStatus).toEqual("On");
     });
 
     it('display power save off', function () {
       thermostat.powerSaverOff();
-      expect(thermostat.psStatus).toEqual("Power Save Off");
+      expect(thermostat.psStatus).toEqual("Off");
     })
 
     it('be reset to 20 degrees by hitting reset', function() {

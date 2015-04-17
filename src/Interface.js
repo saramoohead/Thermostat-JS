@@ -12,12 +12,12 @@ $(document).ready(function () {
     $('#temperature').text(thermostat.temperature);
   });
 
-  $('input.psmode').change(function () {
-    if($('input.psmode').is(':checked'))
-      thermostat.powerSaverOn();
-    else
+  $('input#psmode').click(function () {
       thermostat.powerSaverOff();
+    // else
+    //   thermostat.powerSaverOff();
   });
+
   $('#psstatus').text(thermostat.psStatus);
 
 });
