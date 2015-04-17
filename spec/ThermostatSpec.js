@@ -18,7 +18,7 @@ describe('Thermostat', function() {
 
   });
 
-  describe('Can', function() {
+  describe('can', function() {
 
     it('increase temperature', function() {
       thermostat.increaseTemp();
@@ -41,6 +41,15 @@ describe('Thermostat', function() {
       expect(thermostat.powerSaver).toBe(false);
     });
 
+    it('display power save on', function () {
+      expect(thermostat.psStatus).toEqual("Power Save On");
+    });
+
+    it('display power save off', function () {
+      thermostat.powerSaverOff();
+      expect(thermostat.psStatus).toEqual("Power Save Off");
+    })
+
     it('be reset to 20 degrees by hitting reset', function() {
       thermostat.increaseTemp();
       thermostat.resetTemp();
@@ -49,7 +58,7 @@ describe('Thermostat', function() {
 
   });
 
-  describe('Cannot', function() {
+  describe('cannot', function() {
 
     it('drop below 10 degrees', function() {
       for (i = 0; i < 15; i++) {

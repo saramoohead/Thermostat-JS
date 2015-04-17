@@ -21,6 +21,11 @@ describe('Interface', function () {
             expect($('#temperature')).toContainText('19');
         });
 
+        xit('turn off power save mode display', function () {
+            $('input#psmode').click();
+            expect($('#psstatus')).toContainText('Power Save Off');
+        });
+
         it('has a maximum of 25 when power save mode is on', function () {
             expect($('input.psmode')).toBeChecked();
                 for (var i=0; i<7; i++) {
