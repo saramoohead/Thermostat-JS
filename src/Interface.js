@@ -13,9 +13,12 @@ $(document).ready(function () {
   });
 
   $('input#psmode').click(function () {
-      thermostat.powerSaverOff();
-    // else
-    //   thermostat.powerSaverOff();
+      if(thermostat.psStatus === 'On') {
+        thermostat.powerSaverOff();
+      } else {
+        thermostat.powerSaverOn();
+      }
+      $('#psstatus').text(thermostat.psStatus);
   });
 
   $('#psstatus').text(thermostat.psStatus);
